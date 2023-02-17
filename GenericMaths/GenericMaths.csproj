@@ -15,4 +15,8 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyInterfaces\MyInterfaces.csproj" />
+  </ItemGroup>
+
 </Project>

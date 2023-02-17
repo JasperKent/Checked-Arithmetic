@@ -1,16 +1,16 @@
 ﻿using GenericMaths;
 using System;
+using System.Linq;
 
 try
 {
-    checked
+    var velocities = new Velocity[]
     {
-        var v1 = new Velocity(200_000_000, 0, 0);
-        var v2 = new Velocity(150_000_000, 0, 0);
+        new Velocity(100_000_000, 0, 0),
+        new Velocity(150_000_000, 0, 0)
+    };
 
-        Console.WriteLine(v1 + v2);
-    }
-
+    Console.WriteLine(velocities.Sum());
 }
 catch (Exception ex)
 {
